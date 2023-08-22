@@ -1,0 +1,25 @@
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/routes
+
+###
+GET http://localhost:3000/routes/64e42243533618295c5e1ddb
+
+###
+POST http://localhost:3000/routes
+Content-Type: application/json
+
+{
+    "name": "route test 1",
+    "source_id": "ChIJaQy3zv2iy5QRqZKgImjx7bs",
+    "destination_id": "EjlSLiBEb20gUGVkcm8sIDE0OCwgQm9hIEVzcGVyYW7Dp2EgLSBNRywgMzcxNzAtMDAwLCBCcmFzaWwiMRIvChQKEgl9q5oQJnS1lBGYytELC1Q6PRCUASoUChIJJ1F6dih0tZQR9OUdwe_rrQA"
+}
+
+### Coisas do mapa
+
+### Pegar o place_id
+GET http://localhost:3000/places?text=Rua Dom Pedro, Boa esperança, 148
+
+### Pegar direções entre 2 pontos
+GET http://localhost:3000/directions?originId=ChIJaQy3zv2iy5QRqZKgImjx7bs&destinationId=EjlSLiBEb20gUGVkcm8sIDE0OCwgQm9hIEVzcGVyYW7Dp2EgLSBNRywgMzcxNzAtMDAwLCBCcmFzaWwiMRIvChQKEgl9q5oQJnS1lBGYytELC1Q6PRCUASoUChIJJ1F6dih0tZQR9OUdwe_rrQA
